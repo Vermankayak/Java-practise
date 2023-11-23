@@ -10,11 +10,12 @@ class Student
 	}
 	int getAge()
 	{
-		return age;
+		return age;//Age should not be -ve
 	}
 	void setName(String name)
 	{
 		this.name=name;
+		return;
 	}
 	String getName()
 	{
