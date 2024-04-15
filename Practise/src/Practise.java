@@ -9,7 +9,11 @@ interface ISampl1{
 
 interface ISampl2 extends ISampl,ISampl1{}
 
-public class Practise implements ISampl2{
+class Demo{
+	
+}
+
+public class Practise extends Demo implements ISampl2{
 	
 	public void m1() {};
 	
