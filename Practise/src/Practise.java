@@ -1,21 +1,25 @@
-class Computer{
+abstract class Computer{
+	
+	abstract public void disp();
 	
 	public void config() {
 		System.out.println("Configured your old computer");
 	}
 	
 }
-public class Practise{
+public class Practise extends Computer{
+	
+	public void disp() {
+		System.out.println("Dsiplaying features");
+	}
 
 	public static void main(String [] args) {
 		
-		Computer comp  = new Computer() {
-			public void config() {
-				System.out.println("Configured your computer");
-			}
-		};
+		Practise prac = new Practise();
 		
-		comp.config();
+		
+		prac.disp();
+		
 		
 	}
 }
