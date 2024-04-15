@@ -1,25 +1,18 @@
-abstract class Computer{
-	
-	abstract public void disp();
-	
-	public void config() {
-		System.out.println("Configured your old computer");
-	}
-	
+interface ISampl{
+	void m1();
+	void m2();
 }
-public class Practise extends Computer{
-	
-	public void disp() {
-		System.out.println("Dsiplaying features");
-	}
 
-	public static void main(String [] args) {
-		
-		Practise prac = new Practise();
-		
-		
-		prac.disp();
-		
-		
-	}
+interface ISampl1{
+	void m3();
 }
+
+interface ISampl2 extends ISampl,ISampl1{}
+
+public class Practise implements ISampl2{
+	
+	public void m1() {};
+	
+	public void m2() {};
+	public void m3() {};
+ }
