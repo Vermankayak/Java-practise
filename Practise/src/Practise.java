@@ -1,22 +1,34 @@
-interface ISampl{
-	void m1();
-	void m2();
-}
+import java.util.ArrayList;
 
-interface ISampl1{
-	void m3();
-}
-
-interface ISampl2 extends ISampl,ISampl1{}
-
- abstract class SamplImpl implements ISampl{
-	public void m1() {
-		System.out.println("I am a disco dancer");
+class Student{
+	void disp(){
+		
 	}
 }
 
-public class Practise extends SamplImpl implements ISampl2{
+//class Child extends Parent{
+//	void disp() throws ArithmeticException {
+//		
+//	}
+//}
+
+
+public class Practise  {
+	static int [] a;
 	
-	public void m2() {};
-	public void m3() {};
+	public static void main(String... args) {
+		
+		ArrayList al = new ArrayList();
+		
+		al.add(new Student());
+		
+		Object o = al.get(0);
+		
+		System.out.println(o instanceof Student);
+		
+	
+		
+		
+	}
+	
  }
